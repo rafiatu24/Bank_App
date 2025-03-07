@@ -1,4 +1,4 @@
-package com.rafiatu.pages;
+package com.rafiatu.pages.customer;
 
 public class CustomerHomePage {
 }

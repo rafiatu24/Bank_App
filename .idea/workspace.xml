@@ -4,34 +4,103 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de568316-5b69-47f2-9e99-206cd3797b3a" name="Changes" comment="" />
+    <list default="true" id="de568316-5b69-47f2-9e99-206cd3797b3a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafiatu/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafiatu/base/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafiatu/pages/customer/CustomerHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafiatu/pages/customer/CustomerHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafiatu/pages/customer/CustomerLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafiatu/pages/customer/CustomerLoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rafiatu/base/BasePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rafiatu/base/BasePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/customer/CustomerHomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/customer/CustomerHomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/customer/CustomerLoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/customer/CustomerLoginPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/customer/DepositPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/customer/DepositPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/customer/WithdrawalPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/customer/WithdrawalPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/manager/AddCustomerPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/manager/AddCustomerPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/manager/CustomersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/manager/CustomersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/manager/DeleteCustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/manager/DeleteCustomerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/manager/ManagerLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/manager/ManagerLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/manager/OpenAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/manager/OpenAccountTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1740383200" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1740383199" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2tLaBhBr6e5oGe87HqqzDE9HGkb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/RafiatuIbrahim/IdeaProjects/Bank_App/src/main/java/com/rafiatu/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.AddCustomerPageTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BasePageTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerHomePageTest.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.CustomerLoginPageTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomersTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DeleteCustomerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DepositPageTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ManagerLoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OpenAccountTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WithdrawalPageTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/RafiatuIbrahim/IdeaProjects/Bank_App/src/main/java/com/rafiatu/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="SeleniumInternalSettingsState">
+    <option name="lastFrameworkName" value="FluentLenium" />
+    <option name="lastLanguageId" value="JAVA" />
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -48,22 +117,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1740133677270</updated>
-      <workItem from="1740133678357" duration="82000" />
+      <workItem from="1740133678357" duration="23121000" />
+      <workItem from="1740232190311" duration="6674000" />
+      <workItem from="1740508389798" duration="41000" />
+      <workItem from="1740676955841" duration="307000" />
+      <workItem from="1741169228300" duration="311000" />
+      <workItem from="1741336146322" duration="610000" />
+      <workItem from="1741337695005" duration="1745000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/rafiatu/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
