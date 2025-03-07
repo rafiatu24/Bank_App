@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="de568316-5b69-47f2-9e99-206cd3797b3a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafiatu/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafiatu/base/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafiatu/pages/customer/CustomerHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafiatu/pages/customer/CustomerHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rafiatu/pages/customer/CustomerLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rafiatu/pages/customer/CustomerLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/rafiatu/base/BasePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rafiatu/base/BasePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/customer/CustomerHomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/customer/CustomerHomePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/customer/CustomerLoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/customer/CustomerLoginPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/customer/DepositPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rafiatu/pages/customer/DepositPageTest.java" afterDir="false" />
@@ -72,31 +67,121 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.AddCustomerPageTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BasePageTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CustomerHomePageTest.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.CustomerLoginPageTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CustomersTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DeleteCustomerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DepositPageTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ManagerLoginTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OpenAccountTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.WithdrawalPageTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/RafiatuIbrahim/IdeaProjects/Bank_App/src/main/java/com/rafiatu/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.AddCustomerPageTest.executor": "Run",
+    "JUnit.BasePageTest.executor": "Run",
+    "JUnit.CustomerHomePageTest.executor": "Run",
+    "JUnit.CustomerHomePageTest.testCustomerHomePage.executor": "Run",
+    "JUnit.CustomerLoginPageTest.executor": "Run",
+    "JUnit.CustomersTest.executor": "Run",
+    "JUnit.DeleteCustomerTest.executor": "Run",
+    "JUnit.DepositPageTest.depositPageTest.executor": "Run",
+    "JUnit.DepositPageTest.executor": "Run",
+    "JUnit.ManagerLoginTest.executor": "Run",
+    "JUnit.OpenAccountTest.executor": "Run",
+    "JUnit.WithdrawalPageTest.executor": "Run",
+    "JUnit.WithdrawalPageTest.withdrawalPageTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/RafiatuIbrahim/IdeaProjects/Bank_App",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/RafiatuIbrahim/IdeaProjects/Bank_App/src/main/java/com/rafiatu/Main.java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager" selected="JUnit.OpenAccountTest">
+    <configuration name="AddCustomerPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bank_App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rafiatu.pages.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rafiatu.pages.manager" />
+      <option name="MAIN_CLASS_NAME" value="com.rafiatu.pages.manager.AddCustomerPageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerHomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bank_App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rafiatu.pages.customer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rafiatu.pages.customer" />
+      <option name="MAIN_CLASS_NAME" value="com.rafiatu.pages.customer.CustomerHomePageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerLoginPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bank_App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rafiatu.pages.customer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rafiatu.pages.customer" />
+      <option name="MAIN_CLASS_NAME" value="com.rafiatu.pages.customer.CustomerLoginPageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManagerLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bank_App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rafiatu.pages.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rafiatu.pages.manager" />
+      <option name="MAIN_CLASS_NAME" value="com.rafiatu.pages.manager.ManagerLoginTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpenAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bank_App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rafiatu.pages.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rafiatu.pages.manager" />
+      <option name="MAIN_CLASS_NAME" value="com.rafiatu.pages.manager.OpenAccountTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.OpenAccountTest" />
+        <item itemvalue="JUnit.CustomerLoginPageTest" />
+        <item itemvalue="JUnit.CustomerHomePageTest" />
+        <item itemvalue="JUnit.AddCustomerPageTest" />
+        <item itemvalue="JUnit.ManagerLoginTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SeleniumInternalSettingsState">
     <option name="lastFrameworkName" value="FluentLenium" />
     <option name="lastLanguageId" value="JAVA" />
@@ -123,7 +208,7 @@
       <workItem from="1740676955841" duration="307000" />
       <workItem from="1741169228300" duration="311000" />
       <workItem from="1741336146322" duration="610000" />
-      <workItem from="1741337695005" duration="1745000" />
+      <workItem from="1741337695005" duration="11432000" />
     </task>
     <servers />
   </component>

@@ -8,46 +8,45 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
 /**
- * This test class extends ManagerLoginTest and verifies the functionality
- * of opening a new account for a customer.
+ * This test class verifies the functionality of opening a new account.
+ * It extends ManagerLoginTest, ensuring the manager is already logged in before proceeding.
  */
 public class OpenAccountTest extends ManagerLoginTest {
 
     /**
-     * This test ensures that a manager can successfully open a new account
-     * by selecting a customer, choosing a currency, and submitting the request.
+     * Test case to open a new account for an existing customer.
+     * It selects a customer, chooses a currency, and processes the request.
+     *
+     * @throws InterruptedException to handle the sleep delay.
      */
     @Test
-    public void testOpenAccount() {
-        // Wait for the 'Open Account' button to be clickable and click it
-        WebElement openAccountButton = wait.until(
-            ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(), 'Open Account')]"))
-        );
-        openAccountButton.click();
+    public void testOpenAccount() throws InterruptedException {
+        // Wait until the 'Open Account' button is clickable and click it
+        WebElement OpenAccountButton = wait.until(ExpectedConditions.elementToBeClickable(
+            By.xpath("//button[contains(text(), 'Open Account')]")
+        ));
+        OpenAccountButton.click();
 
         // Wait for the customer dropdown to be visible and select a customer
-        WebElement customerDropdown = wait.until(
-            ExpectedConditions.visibilityOfElementLocated(By.id("userSelect"))
-        );
+        WebElement customerDropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("userSelect")));
         Select userSelect = new Select(customerDropdown);
         userSelect.selectByVisibleText("Harry Potter");
 
         // Wait for the currency dropdown to be visible and select a currency
-        WebElement currencyDropdown = wait.until(
-            ExpectedConditions.visibilityOfElementLocated(By.id("currency"))
-        );
+        WebElement currencyDropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("currency")));
         Select currency = new Select(currencyDropdown);
         currency.selectByVisibleText("Dollar");
 
-        // Wait for the 'Process' button to be clickable and click it to submit the request
-        WebElement openAccountSubmitButton = wait.until(
-            ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(), 'Process')]"))
-        );
-        openAccountSubmitButton.click();
+        // Wait until the 'Process' button is clickable and click it to open the account
+        WebElement OpenAccountSubmitButton = wait.until(ExpectedConditions.elementToBeClickable(
+            By.xpath("//button[contains(text(), 'Process')]")
+        ));
+        OpenAccountSubmitButton.click();
 
-        // Wait for the confirmation alert to appear and accept it
+        // Wait for the alert confirmation to appear
         Alert alert = wait.until(ExpectedConditions.alertIsPresent());
-        alert.accept();
+
+        // Pause execution for 1 second (consider using explicit waits instead of sleep)
+        Thread.sleep(1000);
     }
 }
-

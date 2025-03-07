@@ -7,21 +7,26 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 /**
- * This test class extends BasePageTest and verifies the functionality
- * of the manager login process.
+ * This test class verifies the manager login functionality.
+ * It extends BasePageTest, ensuring access to the WebDriver setup and utilities.
  */
 public class ManagerLoginTest extends BasePageTest {
 
     /**
-     * This test ensures that a manager can successfully log in
-     * by clicking the 'Bank Manager Login' button.
+     * Test case to verify that a manager can successfully log in.
+     * It waits for the 'Bank Manager Login' button to be clickable and clicks it.
+     *
+     * @throws InterruptedException to handle the sleep delay.
      */
     @Test
-    public void managerLoginTest() {
-        // Wait for the 'Bank Manager Login' button to be clickable and click it
-        WebElement managerLoginButton = wait.until(
+    public void managerLoginTest() throws InterruptedException {
+        // Wait until the 'Bank Manager Login' button is clickable and then click it
+        WebElement ManagerLoginButton = wait.until(
             ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(), 'Bank Manager Login')]"))
         );
-        managerLoginButton.click();
+        ManagerLoginButton.click();
+
+        // Pause execution for 1 second (consider using explicit waits for better performance)
+        Thread.sleep(1000);
     }
 }

@@ -7,49 +7,45 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 /**
- * This test class extends ManagerLoginTest and contains test methods
- * for verifying the 'Add Customer' functionality.
+ * This test class handles adding a new customer.
+ * It extends ManagerLoginTest, assuming the manager is already logged in.
  */
 public class AddCustomerPageTest extends ManagerLoginTest {
 
     /**
-     * This test verifies that a manager can navigate to the 'Add Customer' page,
-     * enter customer details, submit the form, and handle the confirmation alert.
+     * Test method to verify the add customer functionality.
+     * It simulates clicking the "Add Customer" button, entering customer details,
+     * submitting the form, and handling the alert confirmation.
+     *
+     * @throws InterruptedException to handle the sleep delay
      */
     @Test
-    public void AddCustomerPageTest() {
-        // Wait for the 'Add Customer' button to be clickable and click it
-        WebElement addCustomerButton = wait.until(
-            ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(), 'Add Customer')]"))
-        );
-        addCustomerButton.click();
+    public void AddCustomerPageTest() throws InterruptedException {
+        // Wait until the "Add Customer" button is clickable and click it
+        WebElement AddCustomerButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(), 'Add Customer')]")));
+        AddCustomerButton.click();
 
-        // Wait for the 'First Name' input field to be visible and enter a first name
-        WebElement inputFieldFName = wait.until(
-            ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='First Name']"))
-        );
+        // Wait for the First Name input field to be visible and enter the first name
+        WebElement inputFieldFName = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='First Name']")));
         inputFieldFName.sendKeys("Rafiatu");
 
-        // Wait for the 'Last Name' input field to be visible and enter a last name
-        WebElement inputFieldLName = wait.until(
-            ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Last Name']"))
-        );
+        // Wait for the Last Name input field to be visible and enter the last name
+        WebElement inputFieldLName = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Last Name']")));
         inputFieldLName.sendKeys("Ibrahim");
 
-        // Wait for the 'Post Code' input field to be visible and enter a postal code
-        WebElement inputFieldPCode = wait.until(
-            ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Post Code']"))
-        );
+        // Wait for the Post Code input field to be visible and enter the post code
+        WebElement inputFieldPCode = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Post Code']")));
         inputFieldPCode.sendKeys("12345");
 
-        // Wait for the 'Add Customer' submission button to be clickable and click it
-        WebElement addCustomerSubmitButton = wait.until(
-            ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div/div/div[2]/div/div[2]/div/div/form/button"))
-        );
-        addCustomerSubmitButton.click();
+        // Wait until the "Submit" button is clickable and click it
+        WebElement AddCustomerSubmitButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div/div/div[2]/div/div[2]/div/div/form/button")));
+        AddCustomerSubmitButton.click();
 
-        // Wait for the confirmation alert to appear and accept it
+        // Wait for the alert popup to appear and accept it
         Alert alert = wait.until(ExpectedConditions.alertIsPresent());
         alert.accept();
+
+        // Pause execution for 1 second (not recommended in real tests, prefer explicit waits)
+        Thread.sleep(1000);
     }
 }

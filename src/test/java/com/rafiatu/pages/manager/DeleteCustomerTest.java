@@ -6,23 +6,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 /**
- * This test class extends CustomersTest and verifies the functionality
- * of deleting a customer from the customers list.
+ * This test class verifies the functionality of deleting a customer.
+ * It extends CustomersTest, ensuring the manager has already accessed the 'Customers' page.
  */
 public class DeleteCustomerTest extends CustomersTest {
 
     /**
-     * This test ensures that a manager can successfully delete a customer
-     * by clicking the corresponding 'Delete' button.
+     * Test method to delete a specific customer based on their unique identifier.
+     * It locates the delete button for the customer with ID 'E725JB' and clicks it.
      */
     @Test
     public void deleteCustomer() {
-        // Wait for the 'Delete' button corresponding to the customer with ID 'E725JB' to be clickable
-        WebElement deleteButton = wait.until(
-            ExpectedConditions.elementToBeClickable(By.xpath("//td[contains(text(), 'E725JB')]/following-sibling::td/button[contains(text(), 'Delete')]"))
-        );
-
-        // Click the 'Delete' button to remove the customer
+        // Wait until the delete button for the specified customer ID ('E725JB') is clickable and then click it
+        WebElement deleteButton = wait.until(ExpectedConditions.elementToBeClickable(
+            By.xpath("//td[contains(text(), 'E725JB')]/following-sibling::td/button[contains(text(), 'Delete')]")
+        ));
         deleteButton.click();
     }
 }
